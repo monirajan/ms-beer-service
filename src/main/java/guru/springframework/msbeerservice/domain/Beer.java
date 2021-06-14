@@ -1,7 +1,7 @@
 package guru.springframework.msbeerservice.domain;
 
 import java.math.BigDecimal;
-import java.time.OffsetDateTime;
+import java.sql.Timestamp;
 import java.util.UUID;
 
 import javax.persistence.Column;
@@ -14,7 +14,6 @@ import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.annotations.UpdateTimestamp;
 
-import guru.springframework.msbeerservice.web.model.BeerStyleEnum;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
@@ -40,10 +39,10 @@ public class Beer {
 
 	@CreationTimestamp
 	@Column(updatable = false)
-    private OffsetDateTime createdDate;
+    private Timestamp createdDate;
 	
 	@UpdateTimestamp
-    private OffsetDateTime lastModifiedDate;
+    private Timestamp lastModifiedDate;
 
     private String beerName;
 
