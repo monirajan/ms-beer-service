@@ -24,8 +24,8 @@ public class BeerDtoTest extends BaseTest{
 	
 	@Test
 	public void deserialize() throws Exception
-	{
-		String val = "{\"id\":\"d050470e-95b1-4f4d-a308-77bcf0d02c5f\",\"version\":null,\"createdDate\":\"2021-06-16T12:04:00.5390496+05:30\",\"lastModifiedDate\":null,\"beerName\":\"Beer1\",\"beerStyle\":\"STYLE1\",\"upc\":\"123\",\"price\":10000,\"quantityOnHand\":null}";
+	{		
+		String val = "{\"version\":null,\"createdDate\":\"2021-06-16T13:13:22+0530\",\"lastModifiedDate\":\"2021-06-16T13:13:22.9129979+05:30\",\"beerName\":\"Beer1\",\"beerStyle\":\"STYLE1\",\"upc\":\"123\",\"price\":\"10000\",\"quantityOnHand\":null,\"locDate\":\"2021-06-16\",\"beerId\":\"b4543c07-f344-4402-ae2c-a0fc751510ea\"}";
 		BeerDto beerDto = objectMapper.readValue(val, BeerDto.class);
 		System.out.println(beerDto);
 	}
