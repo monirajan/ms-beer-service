@@ -49,7 +49,6 @@ public class BeerDto {
 	    private BeerStyleEnum beerStyle;
 
 	    @NotNull
-	    @Positive
 	    private String upc;
 
 	    @NotNull
@@ -59,8 +58,8 @@ public class BeerDto {
 
 	    private Integer quantityOnHand;
 	    
-	    @JsonSerialize(using = LocalDateSerializer.class)
-	    @JsonDeserialize(using = LocalDateDeserializer.class)
-	    LocalDate locDate;
+//	    @JsonSerialize(using = LocalDateSerializer.class)
+//	    @JsonDeserialize(using = LocalDateDeserializer.class)
+//	    LocalDate locDate;
 	
 }
