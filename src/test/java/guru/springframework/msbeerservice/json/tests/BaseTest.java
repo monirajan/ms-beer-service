@@ -17,7 +17,6 @@ public class BaseTest {
 				.beerStyle(BeerStyleEnum.STYLE1)
 				.createdDate(OffsetDateTime.now())
 				.lastModifiedDate(OffsetDateTime.now())
-				.locDate(LocalDate.now())
 				.id(UUID.randomUUID())
 				.upc("123")
 				.price(new BigDecimal("10000"))
